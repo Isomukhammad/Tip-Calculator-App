@@ -62,7 +62,7 @@ reset.addEventListener('click', resetValue);
 
 //function to prevent the input of letters and other characters
 function validateFloat(str) {
-    var rgx = /^[0-9]*?[0-9]*$/;
+    let rgx = /^[0-9]*?[0-9]*$/;
     return str.match(rgx);
 }
 
