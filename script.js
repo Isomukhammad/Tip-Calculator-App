@@ -112,6 +112,6 @@ function resetValue() {
     totalAmount.innerHTML = '$0.00';
 
     for (e of tipBtn) {
-        x.style.backgroundColor = 'hsl(183, 100%, 15%)';
+        e.style.backgroundColor = 'hsl(183, 100%, 15%)';
     }
 }
