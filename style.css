@@ -1,288 +1,290 @@
-:root{
---strong-cyan: hsl(172, 67%, 45%);
---very-dark-cyan: hsl(183, 100%, 15%);
---dark-grayish-cyan: hsl(186, 14%, 43%);
---dark-grayish-cyan: hsl(184, 14%, 56%);
---light-grayish-cyan: hsl(185, 41%, 84%);
---light-grayish-cyan: hsl(189, 41%, 97%);
---white: hsl(0, 0%, 100%);
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --dark-grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Space Mono', monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:hsl(185, 41%, 84%);
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185, 41%, 84%);
 }
 
-.container{
-    width: 375px;
-    background-color:hsl(185, 41%, 84%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container {
+  width: 375px;
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo{
-    padding: 2.2em 0;
-    content: url('./images/logo.svg');
-    width: 25%;
+.logo {
+  padding: 2.2em 0;
+  content: url("./images/logo.svg");
+  width: 25%;
 }
 
-.card{
-    width: 100%;
-    padding: 2em;
-    border-radius: 1.5em 1.5em 0 0;
-    background-color: hsl(0, 0%, 100%);
+.card {
+  width: 100%;
+  padding: 2em;
+  border-radius: 1.5em 1.5em 0 0;
+  background-color: hsl(0, 0%, 100%);
 }
 
-.card-bill{
-    padding-bottom: 2em;
+.card-bill {
+  padding-bottom: 2em;
 }
 
-.card-bill p{
-    font-weight: 700;
-    color:hsl(186, 14%, 43%);
-    margin-bottom: .3em;
+.card-bill p {
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
+  margin-bottom: 0.3em;
 }
 
-#bill-input{
-    width: 100%;
-    padding: .4em;
-    color:hsl(183, 100%, 15%);
-    text-align: right;
-    background-image: url('./images/icon-dollar.svg');
-    background-repeat: no-repeat;
-    background-position: left .7em center;
-    background-color: hsl(189, 41%, 97%);
-    border: 0;
-    font-size: 24px;
-    font-weight: 700;
+#bill-input {
+  width: 100%;
+  padding: 0.4em;
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+  background-image: url("./images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: left 0.7em center;
+  background-color: hsl(189, 41%, 97%);
+  border: 0;
+  font-size: 24px;
+  font-weight: 700;
 }
 
-#bill-input:focus{
-    outline-color: hsl(172, 67%, 45%);
-    color:hsl(183, 100%, 15%);
-}
-
-.card-select p {
-    font-weight: 700;
-    color:hsl(186, 14%, 43%);
-}
-
-.grid-btn{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: .8em;
+#bill-input:focus {
+  outline-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
 }
 
 .card-select p {
-    padding-bottom: 1em;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
+}
+
+.grid-btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.8em;
+}
+
+.card-select p {
+  padding-bottom: 1em;
 }
 
 .tip-btn,
 #input-custom,
-#reset-btn{
+#reset-btn {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 0.25em;
+  padding: 0.23em;
+  border: none;
+  text-align: center;
+}
+
+.tip-btn {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+
+#input-custom {
+  padding-right: 0.7em;
+  text-align: right;
+  background-color: hsl(189, 41%, 96%);
+}
+
+#input-custom:focus {
+  outline-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.input-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+#error {
+  visibility: hidden;
+  font-weight: 700;
+  color: rgb(197, 13, 13);
+}
+
+.input-people {
+  margin-top: 1.5em;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
+}
+
+#people-num {
+  width: 100%;
+  padding: 0.4em;
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+  background-image: url("./images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: left 0.7em center;
+  background-color: hsl(189, 41%, 97%);
+  border: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#people-num:focus {
+  outline-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.card-result {
+  margin-top: 2em;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 1em;
+  padding: 2.5em 1.5em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+.info p:nth-of-type(2) {
+  color: hsl(186, 14%, 43%);
+}
+
+.total {
+  color: hsl(172, 67%, 45%);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#reset-btn {
+  width: 100%;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+
+#reset-btn:active {
+  background-color: hsl(185, 41%, 84%);
+}
+
+#reset-btn h1 {
+  font-size: 1em;
+}
+
+.tip-btn:active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+@media (min-width: 800px) {
+  .card {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 130px 100px;
+    gap: 1.4em;
+    border-radius: 1.5em;
+  }
+
+  .logo {
+    padding: 4.5em 0;
+    content: url("./images/logo.svg");
+    width: 20%;
+  }
+
+  .card-bill,
+  .card-select,
+  .input-people {
+    padding: 0.5em;
+  }
+
+  #bill-input {
+    padding: 0.2em 0.5em;
+    border-radius: 0.2em;
+  }
+
+  .card-result {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    margin-top: 0;
+  }
+
+  .grid-btn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.8em;
+  }
+
+  #people-num {
     width: 100%;
-    font-size: 24px;
-    font-weight: 700;
-    border-radius: .25em;
-    padding: .23em;
-    border: none;
-    text-align: center;
-    
-}
+    padding: 0.2em 0.5em;
+    border-radius: 0.2em;
+  }
 
-.tip-btn{
-    color:hsl(0, 0%, 100%);
-    background-color:hsl(183, 100%, 15%);
-    cursor: pointer;
-};
+  #people-num::placeholder,
+  #bill-input::placeholder {
+    color: hsl(184, 14%, 80%);
+  }
 
-#input-custom{
-    padding-right: .7em;
-    text-align: right;
-    background-color:hsl(189, 41%, 96%);
-}
-
-#input-custom:focus{
-    outline-color: hsl(172, 67%, 45%);
-    color:hsl(183, 100%, 15%);
-}
-
-.input-info{
-    display: flex;
-    justify-content: space-between;
-}
-
-#error{
-    visibility: hidden;
-    font-weight: 700;
-    color: rgb(197, 13, 13);
-}
-
-.input-people{
-    margin-top: 1.5em;
-    font-weight: 700;
-    color:hsl(186, 14%, 43%);
-}
-
-#people-num{
-    width: 100%;
-    padding: .4em;
-    color:hsl(183, 100%, 15%);
-    text-align: right;
-    background-image: url('./images/icon-person.svg');
-    background-repeat: no-repeat;
-    background-position: left .7em center;
-    background-color: hsl(189, 41%, 97%);
-    border: 0;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-#people-num:focus{
-    outline-color: hsl(172, 67%, 45%);
-    color:hsl(183, 100%, 15%);
-}
-
-.card-result{
-    margin-top: 2em;
-    background-color: hsl(183, 100%, 15%);
-    border-radius: 1em;
-    padding: 2.5em 1.5em;
-    padding-bottom: 1em;
+  .card-result {
+    padding: 2.5em;
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-}
+    position: relative;
+  }
 
-.total{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.info{
-    color:hsl(0, 0%, 100%);
+  .info {
+    color: hsl(0, 0%, 100%);
     font-weight: 700;
-}
+    font-size: 0.5rem;
+  }
 
-.info p:nth-of-type(2){
-    color:hsl(186, 14%, 43%);
-}
-
-.total{
-    color:hsl(172, 67%, 45%);
-    font-size: 24px;
+  .total {
+    color: hsl(172, 67%, 45%);
+    font-size: 40px;
     font-weight: 700;
-}
+  }
 
-#reset-btn{
-    width: 100%;
-    background-color: hsl(172, 67%, 45%);
-    color: hsl(183, 100%, 15%);
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 1.3em;
-}
-
-#reset-btn:active{
-    background-color: hsl(185, 41%, 84%);
-}
-
-
-.tip-btn:active{
-    background-color: hsl(172, 67%, 45%);
-    color:hsl(183, 100%, 15%);
-}
-
-@media(min-width: 800px){
-    .card{
-        width: 800px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 80px 130px 100px;
-        gap: 1.4em;
-        border-radius: 1.5em;
-    }
-
-    .logo{
-        padding: 4.5em 0;
-        content: url('./images/logo.svg');
-        width: 20%;
-    }
-
-    .card-bill,
-    .card-select,
-    .input-people{
-        padding: .5em;
-    }
-
-    #bill-input{
-        padding: .2em .5em;
-        border-radius: .2em;
-    }
-
-    .card-result{
-        grid-column: 2/3;
-        grid-row: 1/-1;
-        margin-top: 0;
-    }
-
-    .grid-btn {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: .8em;
-    }
-
-    #people-num{
-        width: 100%;
-        padding: .2em .5em;
-        border-radius: .2em;
-    }
-
-    #people-num::placeholder,
-    #bill-input::placeholder{
-        color:hsl(184, 14%, 80%);
-    }
-
-    .card-result{
-        padding: 2.5em;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5em;
-        position: relative;
-    }
-    
-    .info{
-        color:hsl(0, 0%, 100%);
-        font-weight: 700;
-        font-size: .5rem;
-    }
-    
-    .total{
-        color:hsl(172, 67%, 45%);
-        font-size: 40px;
-        font-weight: 700;
-    }
-
-    .reset{
-        width: 279px;
-        position: absolute;
-        bottom: 2em;
-        left: 2.5em;
-    }
+  .reset {
+    width: 279px;
+    position: absolute;
+    bottom: 2em;
+    left: 2.5em;
+  }
 }
