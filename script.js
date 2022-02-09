@@ -51,6 +51,9 @@ people.addEventListener('input', function () {
 custom.addEventListener('input', function (e) {
     getValue(custom);
     customNum = custom.value;
+    for (e of tipBtn) {
+        e.style.backgroundColor = 'hsl(183, 100%, 15%)';
+    }
     getTipAmount();
     getTotalAmount();
 })
